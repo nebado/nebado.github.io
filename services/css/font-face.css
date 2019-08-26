@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "Sansation_Regular";
+	src: url(../fonts/Sansation_Regular.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Sansation_Bold";
+	src: url(../fonts/Sansation_Bold.ttf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "MyriadPro_Regular";
+	src: url(../fonts/MyriadPro_Regular.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "MyriadPro_Semibold";
+	src: url(../fonts/MyriadPro_Semibold.ttf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "NEOTERIC_Bold";
+	src: url(../fonts/NEOTERIC_Bold.ttf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "HelveticaLTStd_Cond";
+	src: url(../fonts/HelveticaLTStd_Cond.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "HelveticaLTStd_Bold";
+	src: url(../fonts/HelveticaLTStd_Bold.ttf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+

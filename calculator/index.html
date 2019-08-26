@@ -1,0 +1,119 @@
+<!--
+	Logic: LoftBlog
+	Design+Layout: Me
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Calculator JS</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="bg_overlay">
+			<div class="container">
+				<div class="main clearfix">
+					<div class="topline">
+						<div class="logo">
+							<h3>Calculator JS</h3>
+						</div>
+					</div>
+					<div class="left">
+						<h1>Calculator C-700</h1>
+						<div class="calc">
+							<div class="calc_title">C-700</div>
+							<div class="calc_display">
+								<input disabled type="text" id="display" value="0" class="calc__display-input" placeholder="000000000">
+							</div>
+							<div class="calc_buttons">
+								<table class="calc__table">
+									<tr class="calc__buttons-row">
+										<td>
+											<button type="button" id="ce" class="clear_btn btn btn-red">ce</button>
+										</td>
+										<td>
+											<button type="button" id="c" class="clear_btn btn btn-red">c</button>
+										</td>
+										<td>
+											<button type="button" class="btn btn-blue operation">%</button>
+										</td>
+										<td>
+											<button value="Divide" type="button" class="btn btn-blue operation">/</button>
+										</td>
+									</tr>
+									<tr class="calc__buttons-row">
+										<td>
+											<button type="button" class="btn number">7</button>
+										</td>
+										<td>
+											<button type="button" class="btn number">8</button>
+										</td>
+										<td>
+											<button type="button" class="btn number">9</button>
+										</td>
+										<td>
+											<button value="Multiply" type="button" class="btn btn-blue operation">*</button>
+										</td>
+									</tr>
+									<tr class="calc__buttons-row">
+										<td>
+											<button type="button" class="btn number">6</button>
+										</td>
+										<td>
+											<button type="button" class="btn number">5</button>
+										</td>
+										<td>
+											<button type="button" class="btn number">4</button>
+										</td>
+										<td>
+											<button value="Substraction" type="button" class="btn btn-blue operation">-</button>
+										</td>
+									</tr>
+									<tr class="calc__buttons-row">
+										<td>
+											<button type="button" class="btn number">1</button>
+										</td>
+										<td>
+											<button type="button" class="btn number">2</button>
+										</td>
+										<td>
+											<button type="button" class="btn number">3</button>
+										</td>
+										<td>
+											<button value="Addition" type="button" class="btn btn-blue operation">+</button>
+										</td>
+									</tr>
+									<tr class="calc__buttons-row">
+										<td>
+											<button type="button" class="btn btn-red">b</button>
+										</td>
+										<td>
+											<button type="button" class="btn number">0</button>
+										</td>
+										<td>
+											<button type="button" id="decimal" class="btn">.</button>
+										</td>
+										<td>
+											<button type="button" id="result" class="operation btn btn-blue">=</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<h2>How does it works</h2>
+						<button id="howWorkBtn" class="btn">How Works</button>
+						<ul id="operationsList"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/common.js" type="text/javascript"></script>
+</body>
+</html>

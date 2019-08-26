@@ -1,0 +1,165 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.inner-layout {
+	max-width: 970px;
+	height: inherit;
+	margin: 0 auto;
+}
+
+.header {
+	height: 110px;
+	background: #f56262;
+}
+
+.layout-logo {
+	float: left;
+}
+
+.layout-menu {
+	float: right;
+}
+
+.logo img {
+	margin-top: 26px;
+	margin-right: 12px;
+}
+
+.logo span {
+	font-size: 48px;
+	color: white;
+}
+
+.logo p {
+	margin: 0;
+	color: white;
+}
+
+.menu ul {
+	margin-top: 0;
+	text-align: right;
+}
+
+.menu li {
+	display: inline-block;
+	margin-right: 38px;
+	margin-top: 30px;
+}
+
+.menu li > a {
+	display: inline-block;
+	padding: 10px 12px;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s all;
+}
+
+.menu li > a:hover {
+	transform: scale(1.2);
+	background: #232324;
+	border-radius: 5px;
+}
+
+.welcome {
+	height: 636px;
+	background: #eb4f4e;
+}
+
+.inner-welcome {
+	text-align: center;
+}
+
+h1 {
+	font-size: 80px;
+	margin: 0 auto;
+	padding-top: 60px;
+	color: white;
+}
+
+h3 {
+	font-size: 27px;
+	margin: 0 auto;
+	padding-top: 28px;
+	color: white;
+}
+
+.inner-welcome img {
+	width: 620px;
+	margin-top: 36px;
+	border-radius: 10px;
+	box-shadow: 7px 7px 7px #232324;
+}
+
+.smart {
+	height: 368px;
+	background: #232324;
+}
+
+.smart h2 {
+	font-size: 40px;
+	margin: 0 auto;
+	padding-top: 38px;
+	text-align: center;
+	color: white;
+}
+
+.smart h3 {
+	font-size: 20px;
+	margin: 0 auto;
+	padding-top: 9px;
+	text-align: center;
+	color: #c64544;
+}
+
+.inner-blocks {
+	width: 880px;
+	margin: 0 auto;
+}
+
+.block {
+	font-size: 30px;
+	float: left;
+	margin-right: 85px;
+	text-align: center;
+}
+
+.block:last-child {
+	margin-right: 0;
+}
+
+.block h4 {
+	margin: 17px 0 0 0;
+	color: #ffffff;
+}
+
+.block p {
+	margin: 0;
+	font-size: 18px;
+	color: #e74c3c;
+}
+
+.block img {
+	margin-top: 40px;
+}
+
+.clear {
+	display: table;
+	content: "";
+	clear: both;
+}
+

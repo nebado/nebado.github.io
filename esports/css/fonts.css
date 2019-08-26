@@ -1,0 +1,50 @@
+/*ProximaNovaLight*/
+@font-face {
+	font-family: 'ProximaNovaLight';
+	src: url('../fonts/ProximaNovaLight/ProximaNovaLight.eot');
+	src: url('../fonts/ProximaNovaLight/ProximaNovaLight.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProximaNovaLight/ProximaNovaLight.woff') format('woff'),
+		 url('../fonts/ProximaNovaLight/ProximaNovaLight.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+/*ProximaNovaRegular*/
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.eot');
+	src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProximaNovaRegular/ProximaNovaRegular.woff') format('woff'),
+		 url('../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+/*ProximaNovaSemibold*/
+@font-face {
+	font-family: 'ProximaNovaSemibold';
+	src: url('../fonts/ProximaNovaSemibold/ProximaNovaSemibold.eot');
+	src: url('../fonts/ProximaNovaSemibold/ProximaNovaSemibold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProximaNovaSemibold/ProximaNovaSemibold.woff') format('woff'),
+		 url('../fonts/ProximaNovaSemibold/ProximaNovaSemibold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+/*ProximaNovaBold*/
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../fonts/ProximaNovaBold/ProximaNovaBold.eot');
+	src: url('../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProximaNovaBold/ProximaNovaBold.woff') format('woff'),
+		 url('../fonts/ProximaNovaBold/ProximaNovaBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+/*ProximaNovaExtrabold*/
+@font-face {
+	font-family: 'ProximaNovaExtrabold';
+	src: url('../fonts/ProximaNovaExtrabold/ProximaNovaExtrabold.eot');
+	src: url('../fonts/ProximaNovaExtrabold/ProximaNovaExtrabold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProximaNovaExtrabold/ProximaNovaExtrabold.woff') format('woff'),
+		 url('../fonts/ProximaNovaExtrabold/ProximaNovaExtrabold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}

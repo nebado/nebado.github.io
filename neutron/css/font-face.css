@@ -1,0 +1,28 @@
+@font-face{
+font-family: 'TitilliumWeb-Bold';
+src: url('../fonts/TitilliumWeb-Bold.ttf') format('truetype');
+
+font-weight: bold;
+font-style: normal;
+}
+@font-face{
+font-family: 'TitilliumWeb-SemiBold';
+src: url('../fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
+
+font-weight: semibold;
+font-style: normal;
+}
+@font-face{
+font-family: 'TitilliumWeb-Regular';
+src: url('../fonts/TitilliumWeb-Regular.ttf') format('truetype');
+
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+font-family: 'Malaga OT Reg Italic';
+src: url('../fonts/Malaga OT Reg Italic.otf') format('opentype');
+
+font-weight: normal;
+font-style: italic;
+}

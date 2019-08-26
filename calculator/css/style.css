@@ -1,0 +1,149 @@
+body {
+	font-family: "Arial", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	color: #fff;
+}
+.clearfix {
+	clear: both;
+	content: "";
+	overflow: hidden;
+}
+.wrapper {
+	height: 1050px;
+	background-color: #000;
+}
+.bg_overlay {
+	height: 1050px;
+	background: url(../img/bg.png);
+	background-position: top center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.main {
+	background-color: rgba(107,107,107,.7);
+	padding-bottom: 100px;
+}
+.topline {
+	min-height: 90px;
+	background-color: rgba(31,31,31,.9);
+}
+.logo h3 {
+	font-family: Digital;
+	font-size: 40px;
+	line-height: 90px;
+	text-transform: uppercase;
+	padding-left: 80px;
+}
+.main h1 {
+	font-family: Arial, sans-serif;
+	padding-left: 80px;
+}
+.left {
+	padding-top: 110px;
+	float: left;
+	width: 50%;
+}
+.right {
+	padding-top: 110px;
+	padding-left: 600px;
+}
+.calc {
+	margin-top: 30px;
+	margin-left: 80px;
+	width: 410px;
+	height: 500px;
+	background-color: #EEEEEE;
+	border-radius: 12px;
+}
+.calc_title {
+	font-family: "Times New Roman", sans-serif;
+	font-size: 30px;
+	padding: 17px 0 17px 35px;
+}
+.calc_display #display {
+	width: 350px;
+	height: 60px;
+	background-color: #606060;
+	margin-left: 30px;
+	border: none;
+	outline: none;
+/*	box-shadow: inset 1px 2px 20px rgba(255,255,255,.5);*/
+}
+.calc__display-input {
+	font-family: "Digital";
+	font-size: 72px;
+	color: #ebebeb;
+	text-align: right;
+}
+.calc_buttons {
+	margin-left: 30px;
+	margin: 50px auto;
+}
+.calc__table {
+	margin-left: 25px;
+}
+.calc__table .calc__buttons-row {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.calc__table .calc__buttons-row td {
+	display: inline-block;
+	margin-right: 15px;
+}
+.btn {
+	display: inline-block;
+	font-family: "Digital";
+	font-size: 32px;
+	width: 65px;
+	height: 40px;
+	border: none;
+	outline: none;
+	background-color: #000;
+	color: #ebebeb;
+	margin-right: 10px;
+	box-shadow: inset 0px 0px 5px rgba(255,255,255,.9);
+	border-radius: 4px;
+}
+.btn:active {
+	box-shadow: 2px 3px 5px rgba(255,255,255,.9), inset 2px 3px 5px rgba(0,0,0,.7), 2px 3px 5px rgba(255,255,255,.5), inset 2px 3px 5px rgba(0,0,0,.5);
+}
+.btn:hover {
+	background-color: #333;
+}
+.btn-red:hover {
+	background-color: red;
+}
+.btn-blue:hover {
+	background-color: blue;
+}
+.right h2 {
+	color: #fff;
+	font-family: "Digital";
+	font-size: 40px;
+}
+#howWorkBtn {
+	display: inline-block;
+	width: 200px;
+	margin-top: 30px;
+}
+.right #operationsList {
+	list-style-type: none;
+	font-size: 24px;
+	font-family: "Digital Italic";
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+.right ul li {
+	margin-bottom: 20px;
+}
