@@ -4,6 +4,7 @@ decimalBtn = document.getElementById('decimal'),
 clearBtns = document.querySelectorAll('.clear_btn'),
 resultBtn = document.getElementById('result'),
 howWorkBtn = document.getElementById('howWorkBtn'),
+removeWorkBtn = document.getElementById('removeWorkBtn'),
 display = document.getElementById('display'),
 MemoryCurrentNumber = 0,
 MemoryNewNumber = false,
@@ -37,7 +38,7 @@ resultBtn.addEventListener('click', result);
 
 howWorkBtn.addEventListener('click', howWork);
 
-howWorkBtn.addEventListener('click', removeHowWork);
+removeWorkBtn.addEventListener('click', removeHowWork);
 
 function numberPress(number){
 	if (MemoryNewNumber) {
@@ -102,16 +103,28 @@ function decimal() {
 }
 
 function howWork() {
-		for (var i=0; i<operations.length; i++) {
-		var newLi = document.createElement('li');
-		var operationText = operations[i].value;
-		newLi.innerText = (operationText);
-		operationsList.appendChild(newLi);
-	}
+  if (!operationsList.classList.contains('open')) {
+    for (var i=0; i<operations.length; i++) {
+      var newLi = document.createElement('li');
+      var operationText = operations[i].value;
+      newLi.innerText = (operationText);
+      operationsList.appendChild(newLi);
+      operationsList.classList.add('show');
+      operationsList.classList.add('open');
+    } 
+  } else {
+    operationsList.classList.add('show');
+  }
 }
 
 function removeHowWork() {
-	howWorkBtn.addEventListener('click', function(e){
-		operationsList.remove();
-	});
+  if (operationsList.classList.contains('show')) {
+    operationsList.classList.remove('show');
+  }
 }
+
+
+// TODO #1: Make display expression on display calculator
+// Example: 5 - 2, etc Google Calculator
+
+// TODO #2: Make double single event on one button 'How Works'
