@@ -3,9 +3,6 @@ Root Repository
 
 List of sites
 
-
-https://nebado.github.io/business/
-
 https://nebado.github.io/calculator/
 
 https://nebado.github.io/car/
