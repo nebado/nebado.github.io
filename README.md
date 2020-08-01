@@ -3,7 +3,7 @@ Root Repository
 
 List of sites
 
-https://nebado.github.io/calculator/
+<a href="https://nebado.github.io/calculator/">Calculator</a>
 
 https://nebado.github.io/car/
 
