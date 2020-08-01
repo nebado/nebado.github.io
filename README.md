@@ -5,24 +5,25 @@ List of sites
 
 <a href="https://nebado.github.io/calculator/">Calculator</a>
 
-https://nebado.github.io/car/
+<a href="https://nebado.github.io/car/">Car</a>
 
-https://nebado.github.io/deliver/
+<a href="https://nebado.github.io/deliver/">Deliver Site</a>
 
-https://nebado.github.io/esports/
+<a href="https://nebado.github.io/esports/">Esports Site</a>
 
-https://nebado.github.io/first/
+<a href="https://nebado.github.io/first/">First Site></a>
 
-https://nebado.github.io/golden/
+<a href="https://nebado.github.io/golden/">Golden Site></a>
 
-https://nebado.github.io/grid/
+<a href="https://nebado.github.io/grid/">Grid Site></a>
 
-https://nebado.github.io/modern/
+<a href="https://nebado.github.io/modern/">Modern Site</a>
 
-https://nebado.github.io/motion/
+<a href="https://nebado.github.io/motion/">Motion Site</a>
 
-https://nebado.github.io/neutron/
+<a href="https://nebado.github.io/neutron/">Neutron Site</a>
 
-https://nebado.github.io/services/
+<a href="https://nebado.github.io/services/">Services Site</a>
 
-https://nebado.github.io/waterclub/
+<a href="https://nebado.github.io/waterclub/">Waterclub</a>
+
