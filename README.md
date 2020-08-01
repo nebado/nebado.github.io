@@ -11,11 +11,11 @@ List of sites
 
 <a href="https://nebado.github.io/esports/">Esports Site</a>
 
-<a href="https://nebado.github.io/first/">First Site></a>
+<a href="https://nebado.github.io/first/">First Site</a>
 
-<a href="https://nebado.github.io/golden/">Golden Site></a>
+<a href="https://nebado.github.io/golden/">Golden Site</a>
 
-<a href="https://nebado.github.io/grid/">Grid Site></a>
+<a href="https://nebado.github.io/grid/">Grid Site</a>
 
 <a href="https://nebado.github.io/modern/">Modern Site</a>
 
