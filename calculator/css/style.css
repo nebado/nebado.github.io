@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5 {
 	background-color: rgba(31,31,31,.9);
 }
 .logo h3 {
-	font-family: Digital;
+	font-family: "Digital", sans-serif;
 	font-size: 40px;
 	line-height: 90px;
 	text-transform: uppercase;
@@ -79,14 +79,18 @@ h1, h2, h3, h4, h5 {
 /*	box-shadow: inset 1px 2px 20px rgba(255,255,255,.5);*/
 }
 .calc__display-input {
-	font-family: "Digital";
-	font-size: 72px;
+	font-family: "Digital", Arial, sans-serif;
+	font-size: 50px;
+  line-height: 60px;
 	color: #ebebeb;
 	text-align: right;
 }
 .calc_buttons {
 	margin-left: 30px;
 	margin: 50px auto;
+}
+.buttons-wrap {
+  margin-top: 30px;
 }
 .calc__table {
 	margin-left: 25px;
@@ -109,7 +113,6 @@ h1, h2, h3, h4, h5 {
 	outline: none;
 	background-color: #000;
 	color: #ebebeb;
-	margin-right: 10px;
 	box-shadow: inset 0px 0px 5px rgba(255,255,255,.9);
 	border-radius: 4px;
 }
