@@ -3,6 +3,8 @@ Root Repository
 
 List of sites
 
+<a href="https://nebado.github.io/blogzi/">Blogzi</a>
+
 <a href="https://nebado.github.io/calculator/">Calculator</a>
 
 <a href="https://nebado.github.io/car/">Car</a>
@@ -26,4 +28,3 @@ List of sites
 <a href="https://nebado.github.io/services/">Services Site</a>
 
 <a href="https://nebado.github.io/waterclub/">Waterclub</a>
-
