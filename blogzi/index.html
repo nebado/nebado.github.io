@@ -7,16 +7,32 @@
          * {
              margin: 0px;
              padding: 0px;
+             box-sizing: border-box;
          }
          body {
              width: 1110px;
-             margin: auto;
+             margin: 0px 50px;
              background: rgba(32,33,255,0.2);
          }
-         h3, p {
+         ul, li {
+             margin: 0;
+             padding: 0;
+             list-style-type: none;
+         }
+         h2, h3, p {
              padding: 10px;
          }
-
+         aside, section {
+             float: left;
+         }
+         aside {
+             width: 25%;
+             background: rgba(33,123,33,.2);
+         }
+         main {
+             margin-left: 300px;
+             width: 80%;
+         }
          .post-item {
              border: 1px dotted #000;             
              background: rgba(33,123,33,.2);
@@ -25,10 +41,32 @@
              text-align: right;
              font-style: italic;
          }
+         #menu > li > a {
+             display: block;
+             padding: 10px;
+             color: #000;
+         }
+         #menu > li > a:hover {
+             text-decoration: none;
+         }
         </style>
     </head>
     <body>
         <h1 style="text-align: center; margin: 30px 0px; color: #181818;">Blog ZI</h1>
+        <aside>
+            <h2>CMS</h2>
+            <ul id="menu">
+                <li><a href="">WordPress</a></li>
+                <li><a href="">OpenCart</a></li>
+                <li><a href="">Bitrix</a></li>
+                <li><a href="">Joomla</a></li>
+                <li><a href="">Modx</a></li>
+                <li><a href="">Self-Written CMS</a></li>
+                <li><a href="">Other</a></li>
+                <li><a href="">...</a></li>
+            </ul>
+        </aside>
+        <main>
         <div class="post-item">
             <h3 class="post-title">#1 And again on September 3</h3>
             <p class="post-description">(((function thirdSeptember))).</p>            
@@ -57,5 +95,6 @@
             <p class="post-description">Today is Monday. Let's get started to new journey in programming. func(repeat)</p>
             <p class="timestamp">14.09.2020</p>
         </div>
+        </main>
     </body>
 </html>
