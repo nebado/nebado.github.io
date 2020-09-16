@@ -69,7 +69,60 @@
         <main>
             <h2>Components</h2>
             <h3>sale.order.ajax</h3>
+            <p>Modified order.ajax.php</p>
+            <p>
+                <pre>
+//BX.namespace('BX.Sale.OrderAjaxComponent');
+BX.namespace('BX.Sale.OrderAjaxComponent');
+
+(function () {
+	'use strict';
+
+	/**
+	 * Show empty default property value to multiple properties without default values
+	 */
+	if (BX.Sale && BX.Sale.Input && BX.Sale.Input.Utils) {
+		BX.Sale.Input.Utils.asMultiple = function (value) {
+			if (value === undefined || value === null || value === '') {
+				return [];
+			}
+			else if (value.constructor === Array) {
+				var i = 0, length = value.length, val;
+
+				for (; i < length;) {
+					val = value[i];
+
+					if (val === undefined || val === null || val === '') {
+						value.splice(i, 1);
+						--length;
+					}
+					else {
+						++i;
+					}
+				}
+
+				return value.length ? value : [''];
+			}
+			else {
+				return [value];
+			}
+		};
+	}...
+                </pre>
+            </p>
             <h3>sale.basket.line</h3>
+            <p>Modified file top_template.php</p>
+<code>
+<?if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
+/**
+ * @global array $arParams
+ * @global CUser $USER
+ * @global CMain $APPLICATION
+ * @global string $cartId
+ */
+//$compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STUB'] == 'Y');
+?>...
+        </code>
         </main>
     </body>
 </html>
