@@ -1,0 +1,74 @@
+@font-face{
+    font-family: "Ubuntu Mo";
+    src: url('../fonts/UbuntuMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Ubuntu Mo", Arial, sans-serif;
+    width: 1100px;
+    margin: auto;
+    background: #282828;
+    color: #ffffff;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1 {
+    font-family: "Ubuntu Mo", sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+    color: #ffffff;
+}
+h1 > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+h2, h3, p {
+    padding: 10px;
+}
+aside, section {
+    float: left;
+}
+aside {
+    width: 25%;
+    border: 1px solid #181818;
+}
+main {
+    margin-left: 300px;
+}
+.post-item {
+    border: 1px solid #181818;
+    margin: 10px 0;
+}
+.post-item:hover {
+    transition: ease-in 0.5s;
+    background: #333333;
+}
+.timestamp {
+    text-align: right;
+    font-style: italic;
+}
+#menu > li > a {
+    display: block;
+    padding: 10px;
+    color: #888888;
+}
+#menu > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+footer {
+    padding: 20px;
+}
+footer p {
+    text-align: center;
+}

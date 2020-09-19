@@ -1,58 +1,11 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <style>
-         * {
-             margin: 0px;
-             padding: 0px;
-             box-sizing: border-box;
-         }
-         body {
-             width: 1110px;
-             margin: 0px 50px;
-             background: rgba(32,33,255,0.2);
-         }
-         ul, li {
-             margin: 0;
-             padding: 0;
-             list-style-type: none;
-         }
-         h2, h3, p {
-             padding: 10px;
-         }
-         aside, section {
-             float: left;
-         }
-         aside {
-             width: 25%;
-             background: rgba(33,123,33,.2);
-         }
-         main {
-             margin-left: 300px;
-             width: 80%;
-         }
-         .post-item {
-             border: 1px dotted #000;             
-             background: rgba(33,123,33,.2);
-         }
-         .timestamp {
-             text-align: right;
-             font-style: italic;
-         }
-         #menu > li > a {
-             display: block;
-             padding: 10px;
-             color: #000;
-         }
-         #menu > li > a:hover {
-             text-decoration: none;
-         }
-        </style>
+        <link href="../styles/style.css" rel="stylesheet">
     </head>
     <body>
-        <h1 style="text-align: center; margin: 30px 0px; color: #181818;">Blog ZI</h1>
+        <h1><a href="/">Blog ZI</a></h1>
         <aside>
             <h2>Bitrix</h2>
             <ul id="menu">
@@ -67,11 +20,12 @@
             </ul>
         </aside>
         <main>
+            <div class="post-item">
             <h2>Components</h2>
             <h3>sale.order.ajax</h3>
             <p>Modified order.ajax.php</p>
-            <p>
-                <pre>
+            <p class="post-description">
+
 //BX.namespace('BX.Sale.OrderAjaxComponent');
 BX.namespace('BX.Sale.OrderAjaxComponent');
 
@@ -108,11 +62,10 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 			}
 		};
 	}...
-                </pre>
             </p>
             <h3>sale.basket.line</h3>
             <p>Modified file top_template.php</p>
-<code>
+            <code>
 <?if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 /**
  * @global array $arParams
@@ -122,7 +75,11 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
  */
 //$compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STUB'] == 'Y');
 ?>...
-        </code>
+            </code>
+            </div>
         </main>
+        <footer>
+            <p>Copyright 2020. ~Nebado.Corp~</p>
+        </footer>
     </body>
 </html>
