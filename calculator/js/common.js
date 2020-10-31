@@ -103,28 +103,22 @@ function decimal() {
 }
 
 function howWork() {
-  if (!operationsList.classList.contains('open')) {
-    for (var i=0; i<operations.length; i++) {
-      var newLi = document.createElement('li');
-      var operationText = operations[i].value;
-      newLi.innerText = (operationText);
-      operationsList.appendChild(newLi);
-      operationsList.classList.add('show');
-      operationsList.classList.add('open');
-    } 
-  } else {
-    operationsList.classList.add('show');
-  }
-}
+    if (!operationsList.classList.contains('open')) {
+        for (var i=0; i<operations.length; i++) {
+            var newLi = document.createElement('li');
+            var operationText = operations[i].value;
+            newLi.innerText = (operationText);
+            operationsList.appendChild(newLi);
+            operationsList.classList.add('open');
+        }
+    }
 
-function removeHowWork() {
-  if (operationsList.classList.contains('show')) {
-    operationsList.classList.remove('show');
-  }
+    if (operationsList.style.display === 'none') {
+        operationsList.style.display = 'block';
+    } else {
+        operationsList.style.display = 'none';
+    }
 }
-
 
 // TODO #1: Make display expression on display calculator
 // Example: 5 - 2, etc Google Calculator
-
-// TODO #2: Make double single event on one button 'How Works'
