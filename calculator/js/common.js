@@ -3,7 +3,7 @@ operations = document.querySelectorAll('.operation'),
 decimalBtn = document.getElementById('decimal'),
 clearBtns = document.querySelectorAll('.clear_btn'),
 resultBtn = document.getElementById('result'),
-howWorkBtn = document.getElementById('howWorkBtn'),
+openHowWork = document.getElementById('openHowWork'),
 removeWorkBtn = document.getElementById('removeWorkBtn'),
 display = document.getElementById('display'),
 MemoryCurrentNumber = 0,
@@ -36,9 +36,7 @@ decimalBtn.addEventListener('click', decimal);
 
 resultBtn.addEventListener('click', result);
 
-howWorkBtn.addEventListener('click', howWork);
-
-removeWorkBtn.addEventListener('click', removeHowWork);
+openHowWork.addEventListener('click', buttonHowWork);
 
 function numberPress(number){
 	if (MemoryNewNumber) {
@@ -112,7 +110,11 @@ function howWork() {
             operationsList.classList.add('open');
         }
     }
+}
 
+howWork();
+
+function buttonHowWork() {
     if (operationsList.style.display === 'none') {
         operationsList.style.display = 'block';
     } else {
