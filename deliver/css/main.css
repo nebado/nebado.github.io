@@ -1,46 +1,3 @@
-/*Accent colors*/
-
-/*Header color - ba0000*/
-/*Header nav - ffcc00*/
-/*Home or slider - c0c0c0 */
-
-/*Approxiametely layout*/
-/*header
-	.container
-		.header-menu
-			.lang+.contact
-		.main-menu
-			.nav+.logo
-				.menu>ul>li>a
-				.search
-		
-#home or banner or slider
-	.container
-		h1+p+button*2
-
-#services
-	.container
-		h2
-		.box*4
-
-#providers
-	.container
-		h2
-		.block*3
-		#form+img
-#delivered
-	.container
-		h3+p+button
-
-#clients
-	.container
-		img*4
-footer#footer
-	.container
-		h4*3
-		.menu*3
-
-*/
 * {
 	box-sizing: border-box;
 }
@@ -50,6 +7,12 @@ body {
 	margin: 0;
 	box-sizing: border-box;
 	transition: all .5s;
+}
+button {
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
 }
 .clear {
 	display: table;
@@ -63,25 +26,17 @@ body {
 	width: 1170px;
 	margin: 0 auto;
 }
-#header-menu {
+/* Header */
+header {
+    background: #ba0000;
+	color: #fff;
+}
+.top__menu {
+    display: flex;
+    justify-content: space-between;
 	width: 100%;
 	min-height: 50px;
 	line-height: 50px;
-	background: #ba0000;
-	color: #fff;
-}
-.lang {
-	float: left;
-}
-.contact {
-	float: right;
-}
-.lang span,
-.contact span  {
-	font: 14px/24px 'Poppins-Regular', Tahoma, Arial, Helvetica, sans-serif;
-}
-.contact span:nth-child(1) {
-	margin-right: 30px;
 }
 .lang span i,
 .contact span i {
@@ -94,17 +49,70 @@ body {
 	color: #ba0000;
 	display: flex;
 	align-items: center;
+    position: relative;
 }
-.main-menu-flex {
+.main__menu-flex {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.menu {
-	height: 120px;
+#main-menu .menu {
+    background: #ffcc00;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+    transition: max-height .2s ease-out;
+}
+#main-menu .menu-icon {
+    cursor: pointer;
+    display: none;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+#main-menu .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 25px;
+    z-index: 3;
+}
+#main-menu .menu-icon .navicon:before,
+#main-menu .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+#main-menu .menu-icon .navicon:before {
+    top: 5px;
+}
+#main-menu .menu-icon .navicon:after {
+    top: -5px;
+}
+#main-menu .menu-btn {
+  display: none;
+}
+#main-menu .menu-btn:checked ~ .menu {
+    transform: none;
+}
+#main-menu .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+#main-menu .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+#main-menu .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+#main-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+#main-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
 }
 .menu li {
 	display: inline-block;
@@ -114,8 +122,6 @@ body {
 }
 .menu li:last-child {margin-right: 0;}
 .menu li a {
-	display: block;
-	line-height: 116px;
 	padding: 0 15px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -126,7 +132,7 @@ body {
 	font-weight: bold;
 	color: #ba0000;
 }
-.search button {
+#main-menu .search button {
 	display: block;
 	font-size: 18px;
 	width: 50px;
@@ -139,17 +145,18 @@ body {
 	border: none;
 	cursor: pointer;
 }
-.search button:hover {
+#main-menu .search button:hover {
 	background-color: #B42F26;
 }
-.search button i:active {
+#main-menu .search button i:active {
 	position: relative;
 	top: 1px;
 	color: #FFCC00;
 }
-.search button:hover i {
+#main-menu .search button:hover i {
 	color: #FFCC00;
 }
+/* Slider */
 #slider {
 	width: 100%;
 	height: 800px;
@@ -612,4 +619,40 @@ body {
 .footer-menu.social .twitter:hover {
 	color: #1c9dec;
 	transition: all .2s;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .lang span,
+    .contact span  {
+        margin: 0;
+        padding: 0;
+    }
+    .contact span:nth-child(1) {
+	    margin-right: 0;
+    }
+    #main-menu {
+        height: 70px;
+    }
+    #main-menu .menu {
+        width: 100%;
+        position: absolute;
+        height: auto;
+        padding: 50px;
+        background: #ffcc00;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    #main-menu .menu-icon {
+        display: inline-block;
+    }
+    #main-menu li {
+        display: block;
+    }
+    #main-menu li a {
+        line-height: 20px;
+    }
 }
