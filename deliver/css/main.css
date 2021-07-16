@@ -505,24 +505,32 @@ button {
 /* Express */
 .express {
     width: 100%;
-    height: 730px;
-    padding-top: 200px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-.express {
+.express__block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
-.express-form {
-    width: 570px;
+.express__form {
+    width: 47%;
     height: 535px;
     background: #ba0000;
+    margin-bottom: 30px;
 }
-.express-form .filters {
+.express__team {
+    width: 47%;
+    height: 535px;
+}
+.express__form .filters {
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.express-form .filters span {
+.express__form .filters span {
     display: inline-block;
     font: 14px 'Poppins-Bold', Tahoma, Arial, Helvetica, sans-serif;
     width: 50%;
@@ -530,20 +538,20 @@ button {
     text-transform: uppercase;
     color: #fff;
 }
-.express-form .filters span:last-child {
+.express__form .filters span:last-child {
     background: #ffcc00;
     color: #ba0000;
 }
-.express-accordion {
+.express__accordion {
     padding: 40px;
 }
-.express-accordion .set {
+.express__accordion .set {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
     position: relative;
 }
-.express-accordion .set > a {
+.express__accordion .set > a {
     display: block;
     height: 45px;
     font: 14px 'Poppins-Regular', Tahoma, Arial, Helvetica, sans-serif;
@@ -554,56 +562,89 @@ button {
     text-transform: uppercase;
     color: #fff;
 }
-.express-accordion .set > a:hover {
+.express__accordion .set > a:hover {
     background: #ffcc00;
     color: #ba0000;
     border: none;
     transition: background .2s;
 }
-.express-accordion .set > a:hover > span {
+.express__accordion .set > a:hover > span {
     border-left: 1px solid #ba0000;
 }
-.express-accordion .set > a span {
+.express__accordion .set > a span {
     display: inline-block;
     height: 100%;
     float: right;
     padding: 0 20px;
     border-left: 1px solid #fff;
 }
-.express-accordion .content {
+.express__accordion .content {
     position: relative;
     display: none;
     padding: 20px;
 }
-.express-accordion .set > a.active {
+.express__accordion .set > a.active {
     background: #ffcc00;
     color: #ba0000;
     border: none;
 }
-.express-accordion .set > a.active span {
+.express__accordion .set > a.active span {
     border-left: 1px solid #ba0000;
 }
-.express-accordion .set > a.active + .content {
+.express__accordion .set > a.active + .content {
     border: 1px solid #ffcc00;
     background: #a30000;
 }
-.express-accordion .set .content h5 {
+.express__accordion .set .content h5 {
     margin: 0;
     padding-bottom: 15px;
     font: 16px/24px 'Poppins-Bold', Tahoma, Arial, Helvetica, sans-serif;
     color: #fff;
     letter-spacing: 1px;
 }
-.express-accordion .set .content p {
+.express__accordion .set .content p {
     font: 16px/27px 'Poppins-Regular', Tahoma, Arial, Helvetica, sans-serif;
     margin: 0;
     color: #fff;
 }
-.express-accordion .set .content p i {
+.express__accordion .set .content p i {
     color: #ffcc00;
     margin-right: 20px;
 }
-/*Block features*/
+
+@media only screen and (max-width:1200px) {
+    .express__form {
+        width: 48%;
+    }
+    .express__team {
+        width: 48%;
+    }   
+}
+@media only screen and (max-width:992px) {
+    .express__block {
+        justify-content: center;
+    }
+    .express__form {
+        width: 70%;
+    }
+    .express__team {
+        width: 70%;
+    }   
+}
+@media only screen and (max-width:767px) {
+    .express__form {
+        width: 100%;
+    }
+    .express__accordion .set > a,
+    .express__accordion .set .content h5,
+    .express__accordion .set .content p {
+        font-size: 12px;
+    }
+    .express__team {
+        width: 100%;
+    }   
+}
+/* Features */
 #features {
     width: 100%;
     height: 350px;
