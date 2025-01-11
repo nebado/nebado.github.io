@@ -2,11 +2,7 @@
 
 The projects deployed by gh-pages
 
-## My blog
-
-<a href="https://nebado.github.io/blogzi/">Blogzi</a>
-
-## List of projects
+## List of learning projects (HTML/CSS/JS)
 
 <a href="https://nebado.github.io/deliver/">Deliver Site</a>
 
